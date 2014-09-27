@@ -47,6 +47,15 @@ public class Principal {
 			case 12:
 				Ex12.ex12();
 				break;
+			case 13:
+				Ex13.ex13();
+				break;
+			case 14:
+				Ex14.ex14();
+				break;
+			case 15:
+				Ex15.ex15();
+				break;
 				default:
 					System.out.println("pasar por caja");
 					break;

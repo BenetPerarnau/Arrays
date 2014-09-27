@@ -18,12 +18,20 @@ public static byte menu(){
 	System.out.println("10.- Feu un programa en Java que demani el número de files i de columnes d’una taula i que la carregui amb números parells consecutius. Després que:a) Mostri la taula per pantalla.b) Demani un valor de la taula, que canviï aquest valor per un 0 i que torni a mostrar la taula. c) Demani una fila i una columna i que canviï el valor que està en aquella fila i columna per un 0 i que torni a mostrar la taula.");
 	System.out.println("11.- Feu un programa en Java que:a) carregui una taula n x n de números enters positius.b) sumi per separat els elements situats a cada fila.c) multipliqui per separat els elements situats a cada columna.");
 	System.out.println("12.- Feu un programa en Java que prengui una taula n x m plena de caràcters i que canvií les files per les columnes.");
+	System.out.println("13.- Feu un programa en Java que carregui un tauler d’escacs amb els caràcters blanc B o negre N. Després que:a) Demani una posició del tauler i que digui si hi ha un quadre blanc o un de negre.b)Si al primer quadre posen una moneda d’un cèntim d’euro, al segon dues, al tercer quatre i així successivament, quants diners tindrem en total?");
+	System.out.println("14.- Feu un programa en Java que demani una taula n x n amb nombres reals i que calculi: La suma de tots els elements que es troben per sobre de cada diagonal. La suma de tots els elements que es troben per sota de cada diagonal.");
+	System.out.println("15.- En un cert crèdit de CFGS tenim una llista numerada de 25 persones amb el número de llista, les qualificacions de conceptes (60%), les qualificacions de procediments (30%) i les qualificacions d’actituds (10%).Feu un programa en Java que carregui de cada alumne/a les qualificacions i que doni la qualificació final en forma quantitativa (amb dos decimals) i qualitativa (E, N, B, S, I) i que mostri totes les dades per pantalla.");
+	boolean entra=true;
+	do{
 	try{
 	System.out.print("Exercici => ");
 	op=Byte.parseByte(stdin.readLine());
+	entra=true;
 	}catch(Exception e){
 		System.out.println("No has introducido un valor válido");
+		entra=false;
 	}
+	}while(entra==false);
 	return op;
 }
 }
